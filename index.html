@@ -5,40 +5,212 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <!-- Header -->
-    <header>
-      <nav>
-        <a href="">Логотип</a>
-        <ul>
-          <li>
-            <a href="">Про нас</a>
+    <header class="page-header">
+      <div class="container header-wrapper">
+      <nav class="navigation">
+       <svg class="logo" width="24" height="24">
+            <use
+              class=""
+              href="./images/icons.svg#icon-twitter"
+            ></use>
+          </svg>
+        <ul class="list site-nav">
+          <li class="site-nav__item">
+            <a class="link site-nav__link" href="#ab">Про нас</a>
           </li>
-          <li><a href="">Товари</a></li>
-          <li><a href="">Контакти</a></li>
-        </ul>
-        <ul>
-          <li><a href="tel:+380631111111">+38 063 111 11 11</a></li>
-          <li><a href="mailto:Example@gmail.com">Example@gmail.com</a></li>
+          <li class="site-nav__item"><a class="link site-nav__link" href="#goods">Товари</a></li>
+          <li class="site-nav__item"><a class="link site-nav__link" href="#cont">Контакти</a></li>
         </ul>
       </nav>
+        <ul class="list contacts">
+          <li class="contacts__item">
+            <a class="link contacts__link" href="tel:+380631111111">+38 063 111 11 11</a></li>
+          <li><a class="link contacts__link"  href="mailto:Example@gmail.com">Example@gmail.com</a></li>
+        </ul>
+      <ul class="icon-set list">
+            <li class="icon-set__item">
+              <a
+                class="icon-set__link link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Иконка Инстаграм"
+              >
+                <svg
+                  class="icon-set__pic"
+                  width="20"
+                  height="20"
+                >
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-set__item">
+              <a
+                class="icon-set__link link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Иконка Твиттер"
+              >
+                <svg
+                  class="icon-set__pic"
+                  width="20"
+                  height="20"
+                >
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-set__item">
+              <a
+                class="icon-set__link link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Иконка Фейсбук"
+              >
+                <svg
+                  class="icon-set__pic"
+                  width="20"
+                  height="20"
+                >
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-set__item">
+              <a
+                class="icon-set__link link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Иконка ЛинктИн"
+              >
+                <svg
+                  class="icon-set__pic"
+                  width="20"
+                  height="20"
+                >
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <button
+          class="menu-toggle js-open-menu"
+          type="button"
+          aria-label="Переключатель мобильного меню"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="" width="24" height="16">
+            <use
+              class="button-menu__burger"
+              href="./images/icons.svg#icon-menu_top"
+            ></use>
+          </svg>
+        </button>
+          </div>
     </header>
     <main>
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button
+          class="menu-toggle menu-toggle--cross js-close-menu"
+          type="button"
+          aria-label="Переключатель мобильного меню"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="" width="24" height="24">
+            <use
+              class="button-menu__cross"
+              href="./images/icons.svg#icon-close-black"
+            ></use>
+          </svg>
+        </button>
+        <div class="mobile-menu">
+          <ul class="page-nav">
+            <li class="page-nav__item">
+              <a
+                href="#ab"
+                class="current--mobile page-nav__link page-nav__link--studio"
+                >Про нас</a
+              >
+            </li>
+            <li class="page-nav__item">
+              <a href="#goods" class="page-nav__link">Товари</a>
+            </li>
+            <li class="page-nav__item">
+              <a href="#cont" class="page-nav__link">Контакти</a>
+            </li>
+          </ul>
+          <ul class="contacts-nav">
+            <li class="contacts-nav__item">
+              <a href="tel:+380961111111" class="contacts-nav__link">
+                +38 096 111 11 11</a
+              >
+            </li>
+            <li class="contacts-nav__item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="contacts-nav__link contacts-nav__link--grey"
+              >
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+          <ul class="social-nav">
+            <li class="social-nav__item">
+              <a href="" class="social-nav__link">Instagram</a>
+            </li>
+            <li class="social-nav__item">
+              <a href="" class="social-nav__link">Twitter</a>
+            </li>
+            <li class="social-nav__item">
+              <a href="" class="social-nav__link">Facebook</a>
+            </li>
+            <li class="social-nav__item">
+              <a href="" class="social-nav__link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
       <!-- Hero -->
-      <section>
-        <h1>Слоган</h1>
+      <section class="section hero">
+        <div class="container">
+        <h1 class="hero__title">Русский военный корабль пошел на х#й!</h1>
+        </div>
       </section>
       <!-- About -->
-      <section>
-        <h2>Про нас</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, neque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium atque rem ad nulla, maxime eos tempora ex asperiores non. Voluptatem, expedita quaerat. Eaque illum maiores rerum voluptate hic incidunt impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam explicabo cupiditate quasi, recusandae tenetur dicta nisi voluptates earum a error dignissimos eum distinctio dolorum laboriosam, aliquam repellendus deleniti iste nulla.</p>
+      <section class="section about" id="ab">
+        <div class="container">
+        <h2 class="title">Про нас</h2>
+        <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, neque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium atque rem ad nulla, maxime eos tempora ex asperiores non. Voluptatem, expedita quaerat. Eaque illum maiores rerum voluptate hic incidunt impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam explicabo cupiditate quasi, recusandae tenetur dicta nisi voluptates earum a error dignissimos eum distinctio dolorum laboriosam, aliquam repellendus deleniti iste nulla.</p>
+      </div>
       </section>
       <!-- Our goods -->
-      <section>
-        <h2>Товари</h2>
+      <section class="section goods" id="goods">
+        <div class="container">
+        <h2 class="title">Товари</h2>
+
+
         <ul class="grid list">
-            <li class="grid__item">
+             <li class="grid__item">
               <a
                 class="grid__link link"
                 href=""
@@ -48,42 +220,17 @@
                 <div class="thumb">
                   <img
                     class="thumb__image image"
-                    src="./images/img-21.jpg"
+                    src="./images/IMG_0768.jpg"
                     alt="Товар"
-                    width="370"
-                    height="294"
+                    width="570"
+                    height="400"
                   />
                 </div>
-
-                <div class="thumb__content">
-                  <h3 class="thumb__title">Товар 1</h3>
-                  <p class="thumb__text">Опис</p>
-                </div>
-              </a>
-            </li>
-            <li class="grid__item">
-              <a
-                class="grid__link link"
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div class="thumb">
-                  <img
-                    class="thumb__image image"
-                    src="./images/img-22.jpg"
-                    alt="Товар"
-                    width="370"
-                    height="294"
-                  />
-                 
-                </div>
-
                 <div class="thumb__content">
                   <h3 class="thumb__title">
-                    Товар 2
+                    Ремінь одноточковий універсальний, з утяжкою
                   </h3>
-                  <p class="thumb__text">Опис</p>
+                  <p class="thumb__text">Ремінь одноточковий універсальний, з утяжкою (на випадок, коли немає антабки, або відсутня можливість кріплення ременя карабіном зі сторони прикладу). Вироблений з поліамідної стропи, посиленої. Переваги такого матеріалу – бистре висихання та підвищена стійкість до зносу, особливо в польових умовах. Всі стики армовані якісною натуральною шкірою, товщиною 3 мм., проклеєні та прошиті армованою ниткою. У виробі використовуються якісна фурнітура. Ремінь в зборі, матеріали та фурнітуру протестовано, витримує статичні та динамічні навантаження (до 22 кг.) в польових умовах.</p>
                 </div>
               </a>
             </li>
@@ -97,19 +244,43 @@
                 <div class="thumb">
                   <img
                     class="thumb__image image"
-                    src="./images/img-23.jpg"
+                    src="./images/R-2.jpg"
                     alt="Товар"
-                    width="370"
-                    height="294"
+                    width="570"
+                    height="400"
+                  />
+                </div>
+                <div class="thumb__content">
+                  <h3 class="thumb__title">
+                    Ремінь трьохточковий універсальний
+                  </h3>
+                  <p class="thumb__text">Ремінь трьохточковий універсальний. Вироблений з поліамідної стропи, посиленої. Переваги такого матеріалу – бистре висихання та підвищена стійкість до зносу, особливо в польових умовах. Всі стики армовані якісною натуральною шкірою, товщиною 3 мм., проклеєні та прошиті армованою ниткою. У виробі використовуються якісна фурнітура, посилені металеві тактичні карабіни. Ремінь в зборі, матеріали та фурнітуру протестовано, витримує статичні та дінамічні навантаження (до 22 кг.) в польових умовах.</p>
+                </div>
+              </a>
+            </li>
+            <li class="grid__item">
+              <a
+                class="grid__link link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="thumb">
+                  <img
+                    class="thumb__image image"
+                    src="./images/R-3.jpg"
+                    alt="Товар"
+                    width="570"
+                    height="400"
                   />
                 
                 </div>
 
                 <div class="thumb__content">
                   <h3 class="thumb__title">
-                    Товар 3
+                    Ремінь одноточковий універсальний
                   </h3>
-                  <p class="thumb__text">Опис</p>
+                  <p class="thumb__text">Ремінь одноточковий універсальний. Вироблений з поліамідної стропи, посиленої. Переваги такого матеріалу – бистре висихання та підвищена стійкість до зносу, особливо в польових умовах. Всі стики армовані якісною натуральною шкірою, товщиною 3 мм., проклеєні та прошиті армованою ниткою. У виробі використовуються якісна фурнітура, посилені металеві тактичні карабіни. Ремінь в зборі, матеріали та фурнітуру протестовано, витримує статичні та динамічні навантаження (до 22 кг.) в польових умовах.</p>
                 </div>
               </a>
             </li>
@@ -123,19 +294,19 @@
                 <div class="thumb">
                   <img
                     class="thumb__image image"
-                    src="./images/img-24.jpg"
+                    src="./images/R-4.jpg"
                     alt="Товар"
-                    width="370"
-                    height="294"
+                    width="570"
+                    height="400"
                   />
                  
                 </div>
 
                 <div class="thumb__content">
                   <h3 class="thumb__title">
-                   Товар 4
+                  Ремінь трьохточковий універсальний
                   </h3>
-                  <p class="thumb__text">Опис</p>
+                  <p class="thumb__text">Ремінь трьохточковий універсальний. Вироблений з поліамідної стропи, посиленої. Переваги такого матеріалу – бистре висихання та підвищена стійкість до зносу, особливо в польових умовах. Всі стики армовані якісною натуральною шкірою, товщиною 3 мм., проклеєні та прошиті армованою ниткою. У виробі використовуються якісна фурнітура, посилені металеві тактичні карабіни. Ремінь в зборі, матеріали та фурнітуру протестовано, витримує статичні та динамічні навантаження (до 22 кг.) в польових умовах.</p>
                 </div>
               </a>
             </li>
@@ -151,8 +322,8 @@
                     class="thumb__image image"
                     src="./images/img-25.jpg"
                     alt="Товар"
-                    width="370"
-                    height="294"
+                    width="570"
+                    height="400"
                   />
                  
                 </div>
@@ -161,7 +332,7 @@
                   <h3 class="thumb__title">
                     Товар 5
                   </h3>
-                  <p class="thumb__text">Опис</p>
+                  <p class="thumb__text">Опис Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore voluptatum amet commodi earum a dignissimos eligendi perferendis cumque veniam nostrum, voluptate atque, hic neque sequi nobis error vero unde assumenda!</p>
                 </div>
               </a>
             </li>
@@ -175,10 +346,10 @@
                 <div class="thumb">
                   <img
                     class="thumb__image image"
-                    src="./images/img-26.jpg"
+                    src="#"
                     alt="Товар"
-                    width="370"
-                    height="294"
+                    width="570"
+                    height="400"
                   />
                  
                 </div>
@@ -187,37 +358,44 @@
                   <h3 lang="en" class="thumb__title">
                     Товар 6
                   </h3>
-                  <p class="thumb__text">Опис</p>
+                  <p class="thumb__text">Опис Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore voluptatum amet commodi earum a dignissimos </p>
                 </div>
               </a>
             </li>
-            
+         </div>   
       </section>
     </main>
        <!-- Footer -->
-    <footer>
-      <a href="">Логотип</a>
-      <address>
-       <ul>
-        <h3>Контакти</h3>
-          <li><a href=""></a>Адреса</li>
-          <li><a href="tel:+380631111111">+38 063 111 11 11</a></li>
-          <li><a href="mailto:Example@gmail.com">Example@gmail.com</a></li>
+    <footer class="footer">
+      <div class="container footer-box">
+        <div class="address-wrapper">
+       <svg class="" width="24" height="24">
+            <use
+              class=""
+              href="./images/icons.svg#icon-twitter"
+            ></use>
+          </svg>
+      <address class="address" id="cont">
+       <ul class="list address__list">
+          <li class="address__item"><a class="link address__link" href="">Адреса</a></li>
+          <li class="address__item"><a class="link address__link" href="tel:+380631111111">+38 063 111 11 11</a></li>
+          <li class="address__item"><a class="link address__link" href="mailto:Example@gmail.com">Example@gmail.com</a></li>
        </ul>
       </address>
+      </div>
       <section class="join-section">
-          <h3 class="join-section__title">Ми у соцмережах</h3>
-          <ul class="icon-set list">
+
+          <ul class="icon-set--footer">
             <li class="icon-set__item">
               <a
-                class="icon-set__link icon-set__link--bg-grey link"
+                class="icon-set__link icon-set__link--bg-black"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Иконка Инстаграм"
               >
                 <svg
-                  class="icon-set__pic icon-set__pic--white"
+                  class="icon-set__pic icon-set__pic--color-white"
                   width="20"
                   height="20"
                 >
@@ -227,14 +405,14 @@
             </li>
             <li class="icon-set__item">
               <a
-                class="icon-set__link icon-set__link--bg-grey link"
+                class="icon-set__link  icon-set__link--bg-black link"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Иконка Твиттер"
               >
                 <svg
-                  class="icon-set__pic icon-set__pic--white"
+                  class="icon-set__pic icon-set__pic--color-white"
                   width="20"
                   height="20"
                 >
@@ -244,14 +422,14 @@
             </li>
             <li class="icon-set__item">
               <a
-                class="icon-set__link icon-set__link--bg-grey link"
+                class="icon-set__link icon-set__link--bg-black  link"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Иконка Фейсбук"
               >
                 <svg
-                  class="icon-set__pic icon-set__pic--white"
+                  class="icon-set__pic icon-set__pic--color-white"
                   width="20"
                   height="20"
                 >
@@ -261,14 +439,14 @@
             </li>
             <li class="icon-set__item">
               <a
-                class="icon-set__link icon-set__link--bg-grey link"
+                class="icon-set__link icon-set__link--bg-black link"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Иконка ЛинктИн"
               >
                 <svg
-                  class="icon-set__pic icon-set__pic--white"
+                  class="icon-set__pic icon-set__pic--color-white"
                   width="20"
                   height="20"
                 >
@@ -278,7 +456,8 @@
             </li>
           </ul>
         </section>
-   
+          </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

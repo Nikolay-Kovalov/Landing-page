@@ -1,0 +1,15 @@
+.page-header {
+    background-color: #BDB76B;
+}
+
+.header-wrapper {
+    height: 60px;
+    display: flex;
+
+    align-items: baseline;
+
+    @media screen and (min-width: 768px) {
+        height: 80px;
+        align-items: center;
+    }
+}
