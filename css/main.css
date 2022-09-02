@@ -658,6 +658,8 @@ p {
 }
 
 .about__text {
+  font-size: 16px;
+  line-height: 1.88;
   text-align: justify;
 }
 
@@ -725,6 +727,7 @@ p {
   .address-wrapper {
     margin-right: auto;
     text-align: left;
+    margin-bottom: 0px;
   }
 }
 
