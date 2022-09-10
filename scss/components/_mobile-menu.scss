@@ -79,6 +79,8 @@
     &:not(:last-child) {
         margin-bottom: 32px;
     }
+
+
 }
 
 .contacts-nav {
@@ -93,6 +95,8 @@
 
     display: flex;
     flex-wrap: wrap;
+
+
 }
 
 
@@ -104,6 +108,14 @@
     line-height: calc(47 / 40);
     letter-spacing: 0.02em;
     color: var(--title-text-color);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        color: white;
+    }
+
+
 }
 
 .contacts-nav__link {
@@ -114,6 +126,12 @@
     line-height: calc(40 / 34);
     letter-spacing: 0.02em;
     color: black;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        color: white;
+    }
 
 
 }
@@ -151,6 +169,12 @@
     line-height: calc(22 / 18);
     letter-spacing: 0.02em;
     color: black;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        color: white;
+    }
 }
 
 
