@@ -67,6 +67,7 @@
     margin-bottom: auto;
 }
 
+
 .page-nav__item {
 
     &:not(:last-child) {
@@ -189,6 +190,6 @@
 
     &:hover,
     &:focus {
-        fill: var(--accent-color);
+        fill: black;
     }
 }
