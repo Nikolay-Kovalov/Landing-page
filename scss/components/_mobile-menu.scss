@@ -1,19 +1,40 @@
 .menu-container {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: 999;
-    background-color: #78866B;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-    padding: 48px 40px;
+    @media screen and (orientation: portrait) {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 999;
+        background-color: #78866B;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+        padding: 48px 40px;
 
-    transform: translateX(100%);
+        transform: translateX(100%);
 
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    @media screen and (orientation: landscape) {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 999;
+        background-color: #78866B;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+        padding: 48px 40px;
+
+        transform: translateX(100%);
+
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
 
 
 
@@ -26,6 +47,12 @@
     display: flex;
     flex-direction: column;
     height: 100%;
+
+    @media screen and (orientation: landscape) {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+    }
 
 }
 
@@ -65,6 +92,11 @@
     padding: 0px;
     margin-top: 0px;
     margin-bottom: auto;
+
+    @media screen and (orientation: landscape) {
+        margin-right: 60px;
+    }
+
 }
 
 
@@ -73,6 +105,8 @@
     &:not(:last-child) {
         margin-bottom: 32px;
     }
+
+
 }
 
 
@@ -81,6 +115,11 @@
         margin-bottom: 32px;
     }
 
+    @media screen and (orientation: landscape) {
+        &:not(:last-child) {
+            margin-bottom: 46px;
+        }
+    }
 
 }
 
@@ -89,6 +128,10 @@
     padding: 0px;
 
     margin-bottom: 50px;
+
+    @media screen and (orientation: landscape) {
+        margin-top: 5px;
+    }
 }
 
 .social-nav {
@@ -97,6 +140,10 @@
     display: flex;
     flex-wrap: wrap;
 
+    @media screen and (orientation: landscape) {
+        display: none;
+
+    }
 
 }
 
@@ -157,6 +204,7 @@
     &:not(:first-child) {
         padding-left: 10px;
     }
+
 }
 
 
