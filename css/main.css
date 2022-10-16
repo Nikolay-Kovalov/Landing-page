@@ -771,6 +771,20 @@ p {
   margin: 0 auto;
   padding-top: 10px;
   padding-bottom: 10px;
+  background-color: black;
+  color: white;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero__button:hover,
+.hero__button:focus {
+  background-color: white;
+  color: black;
+}
+
+.hero__link {
+  text-decoration: none;
 }
 
 .about {
