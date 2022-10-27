@@ -490,7 +490,13 @@ p {
 }
 
 .btn__amount {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
   color: black;
+  background-color: lightgrey;
 }
 
 .title {

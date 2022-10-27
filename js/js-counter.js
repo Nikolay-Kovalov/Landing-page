@@ -8,9 +8,10 @@ btnDecrRef.addEventListener('click', decrement);
 btnIncrRef.addEventListener('click', increment);
 
 function decrement(evt) {
-    if (spanRef.textContent = counterValue -= 1 && counterValue >=1) {
+
+    if (spanRef.textContent = counterValue -= 1 && counterValue >= 1) {
         priceRef.textContent -= 400 
-    }
+    } 
 return ; 
 };
 
